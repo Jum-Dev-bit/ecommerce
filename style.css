@@ -26,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: snow;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -330,7 +331,7 @@ footer{
         width: 100%;
         justify-content: space-between;
         color: white;
-        padding: 20px 50px;
+        padding: 20px 0px;
         text-decoration: none;
     }
     h1{
@@ -1907,7 +1908,13 @@ justify-content: space-between;
 }
 
 @media  screen and (max-width:380px) {
+    body{
+        overflow-x: hidden;
+    }
    header{
+    width: 100dvw;
+    display: flex;
+    justify-content: space-between;
      .navbtn{
         font-size: 30px;
      }
@@ -1965,6 +1972,10 @@ justify-content: space-between;
     .shop-item-div{
         width: 170px;
     }
+   }
+
+   footer{
+    
    }
 }
 
